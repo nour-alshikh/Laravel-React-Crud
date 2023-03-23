@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container-new {
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container-new .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container-new .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.content .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+.user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.input-box span.details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #9b59b6;
+}
+
+.button {
+    height: 45px;
+    width: 300px;
+}
+
+.button button {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.8s;
+    background-image: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    z-index: 1;
+}
+
+.button button:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    border: none;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.button button:hover::before {
+
+    opacity: 1;
+}
+
+.buttond {
+    height: 35px;
+    width: 100px;
+}
+
+.buttonc {
+    height: 45px;
+    width: 100px;
+}
+
+.buttond .button-del {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.8s;
+    background-image: linear-gradient(-135deg, #ef3d3d, #f90c0c);
+    z-index: 1;
+}
+
+.buttonc .button-del {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.8s;
+    background-image: linear-gradient(-135deg, #ef3d3d, #f90c0c);
+    z-index: 1;
+}
+
+.buttond .button-del:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    border: none;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+    background: linear-gradient(135deg, #ef3d3d, #f90c0c);
+}
+
+.buttond .button-del:hover::before {
+    opacity: 1;
+}
+
+.buttonu {
+    height: 35px;
+    width: 100px;
+}
+
+.buttonu .button-up {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.8s;
+    background-image: linear-gradient(-135deg, #A5E1AD, #4CA1A3);
+    z-index: 1;
+}
+
+.buttonu .button-up:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    border: none;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+    background: linear-gradient(135deg, #A5E1AD, #4CA1A3);
+}
+
+.buttonu .button-up:hover::before {
+    opacity: 1;
+}
+
+
+
+.conspan {
+    height: 24px;
+    opacity: 0;
+}
+
+@media(max-width: 584px) {
+    .container-new {
+        max-width: 100%;
+    }
+
+    .user-details .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .content .user-details {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .user-details::-webkit-scrollbar {
+        width: 5px;
+    }
+}
+
+
+.glass {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border-radius: 10px;
+    min-width: 1000px;
+}
+
+.cursor {
+    cursor: pointer;
+}
